@@ -14,7 +14,7 @@ function App() {
   return (
     console.log("hello"),
     <div className="App">
-        <Button value={'Change word'} /> 
+         
           <Content /> 
       
     </div>
