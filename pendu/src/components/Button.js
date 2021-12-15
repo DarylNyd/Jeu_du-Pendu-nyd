@@ -1,8 +1,8 @@
 import React from "react"
 import "./button.css"
 
-export default function Button ({onclick: handleClick, value}) {
+export default function Button ({onclick: getData, value}) {
     return(
-    <button onClick={handleClick}>{value}</button>
+    <button onClick={getData}>{value}</button>
     )}
  
