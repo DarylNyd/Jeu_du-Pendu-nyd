@@ -1,0 +1,12 @@
+.score {
+    display: inline;
+    margin: auto;
+    padding: 10px;
+}
+.score1 {
+    display: inline;
+    background-color: rgb(223, 201, 243);
+    color: black;
+    margin: auto;
+    padding: 10px;
+}
