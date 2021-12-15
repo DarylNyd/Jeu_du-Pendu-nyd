@@ -1,8 +1,8 @@
 
 import './App.css';
 import Content from './components/content';
-import ThemeContextProvider from './theme/theme';
-import Button from './components/Button';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Home from './home';
 
 const GOOD_LETTER = "AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéàâêè";
 
@@ -12,13 +12,21 @@ const GOOD_LETTER = "AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéàâ�
 function App() {
   
   return (
+    <Router>
+    
     console.log("hello"),
     <div className="App">
-         
+    <Switch>
+    <Route exact path="/home">
+          <Home /> 
+        </Route>
+       <Route  exact path="/">
           <Content /> 
-      
+        </Route>
+        
+     </Switch>
     </div>
-   
+    </Router>
   );
 }
 
