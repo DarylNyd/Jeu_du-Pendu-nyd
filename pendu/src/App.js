@@ -1,11 +1,13 @@
 
 import './App.css';
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {CallApi} from './score'
 import Content from './components/content';
 import Splash from './theme/splash'
 import  { ThemeProvider } from "styled-components";
 
+
+const GOOD_LETTER = "AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéàâêè";
 const LightTheme ={
   pageBackground: "white",
   fontColor:"black"
@@ -19,6 +21,9 @@ const DarkTheme ={
    light:LightTheme,
    dark:DarkTheme,
  }
+
+
+
 
 
 function App() {
