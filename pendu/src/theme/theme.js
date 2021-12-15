@@ -1,17 +1,19 @@
-import React, { createContext, useState} from "react";
+import React, {createContext, useState} from 'react';
 
-
-export const Theme = createContext ();
+export const ThemeContext = createContext() ;
 
 const ThemeContextProvider = (props) => {
 
-    const [theme, setTheme] = useState('Hello World');
+    const [theme, setTheme] = useState(true);
+
+    const toggleTheme = () => {
+        setTheme (!theme)
+    }
 
     return (
-        <ThemeContextProvider value={{theme}}> 
+        <ThemeContext.Provider value={{theme, toggleTheme }}>
             {props.children}
-        </ThemeContextProvider>
+        </ThemeContext.Provider>
     )
-
 }
-export default ThemeContextProvider;
+export default ThemeContextProvider ;
