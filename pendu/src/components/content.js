@@ -1,21 +1,29 @@
 import React from "react";
-import Button from "./Button";
 import './content.css'
 import CallWord from "../wordapi";
+import {CallApi} from '../score';
+
 
 
 
   export default function Content () {
+    
+  
       
     
       return (
-          <div >
+          <div className="App-header" >
+              <h1>Animal Finder</h1>
+               
               <h2>Trouver d'animaux</h2>
               <p>Trouve dont l'animal cachés</p>
              <p><CallWord></CallWord></p>
 
               
-              <Button value={'Change word'} />
+              
+
+              <p>Classement des Joueurs</p>
+       <CallApi></CallApi>
           </div>
       )
   }
