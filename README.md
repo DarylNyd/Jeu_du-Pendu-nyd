@@ -43,6 +43,8 @@ Et afficher si il a perdu ou pas
 ca devait aussi montré csi une lettre a deja été utiliser
 et posède une sorte de dashboard qui montre le classements des joueurs
 
+test it here
+https://jeu-du-pendu-nyd0-aloyh15li-darylnyd.vercel.app
 ## Credits
 
  by **_Yvan Ndenga Nemeck_ Bachelor CDGP group 1 in Efrei in Paris**.
