@@ -14,9 +14,9 @@ function App() {
   return (
     console.log("hello"),
     <div className="App">
-      <ThemeContextProvider>
+      
           <Content /> 
-      </ThemeContextProvider>
+      
     </div>
    
   );
