@@ -28,7 +28,7 @@ export function CallWord() {
         <div>
             <p>{words.data.word}</p>
 
-            <Button value={'Change word'} onclick={() => fetch()}/>
+            <Button value={'Change word'} onclick={() => getData()}/>
         </div>
     );
     }
